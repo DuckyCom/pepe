@@ -1,0 +1,226 @@
+
+/* Definición de variables para el tema claro */
+:root {
+    --background: #f8f8f8;
+    --text: #333;
+    --button-bg: #007bff;
+    --button-text: white;
+    --button-hover-bg: #0056b3;
+  }
+  
+ /* Tema oscuro - se activa con la clase `dark-mode` en el body */
+body.dark-mode {
+    --background: #000000; /* Cambiar a un color */
+    --text: #f8f8f8;
+    --button-bg: #444;
+    --button-text: #f0f0f0;
+    --button-hover-bg: #666;
+}
+
+  
+  /* Aplicación de los colores de tema */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text);
+  }
+  
+  /* Estilos generales para textos */
+  h1 {
+    color: var(--text);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Estilos de los botones */
+  button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  /* Estilos de la barra de navegación */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--background);
+    color: var(--text);
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links .icon {
+    margin-left: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text);
+  }
+  
+  /* Estilos para la lista de productos */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product-item {
+    background-color: var(--background);
+    color: var(--text);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .product-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el contenido de la página Home según el tema */
+  .home-page h1, .home-page p {
+    color: var(--text);
+  }
+
+  .product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px; /* Limitar el ancho del formulario */
+    margin: auto;
+  }
+  
+  .product-form input,
+  .product-form textarea,
+  .product-form button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .product-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .product-form input,
+  .product-form textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Asegúrate de que el CSS esté en styles.css */
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .login-form input,
+  .login-form button {
+    width: 100%;
+    max-width: 300px; /* Limita el ancho */
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Estilos para el carrito */
+.cart-page {
+    padding: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cart-item button {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  .cart-item h3,
+  .cart-item p {
+    margin: 0;
+  }
+  
+  /* Navbar.css */
+
+.navbar {
+    /* Resto de tus estilos */
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-left: 15px;
+    font-size: 24px;
+    position: relative;
+    color: var(--text);
+  }
+  
+  /* Estilo para el contador del carrito */
+  .cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+  }
+
+  /* styles.css o Navbar.css */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8; /* Cambiar si el fondo es blanco */
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
